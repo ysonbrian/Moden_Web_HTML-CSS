@@ -65,13 +65,14 @@ p {
 
 .section-title {}
 
-@supports (background-blend-mode: multiply) {
-     .hero {
-          color: white;
-          text-align: center;
-          padding: 15em 0;
-          background-color: #222;
-          background: #222;
+.hero {
+     color: white;
+     text-align: center;
+     padding: 15em 0;
+     background-color: #222;
+     background: #222;
+
+     @supports (background-blend-mode: multiply) {
           background: url(../img/shoe-3.png),
                radial-gradient(#444, #111);
           background-blend-mode: multiply;
@@ -80,3 +81,20 @@ p {
           background-position-y: center center;
      }
 }
+
+
+// @supports (background-blend-mode: multiply) {
+//      .hero {
+//           color: white;
+//           text-align: center;
+//           padding: 15em 0;
+//           background-color: #222;
+//           background: #222;
+//           background: url(../img/shoe-3.png),
+//                radial-gradient(#444, #111);
+//           background-blend-mode: multiply;
+//           background-attachment: fixed;
+//           background-repeat: no-repeat;
+//           background-position-y: center center;
+//      }
+// }
